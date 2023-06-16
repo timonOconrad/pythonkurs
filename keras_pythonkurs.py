@@ -37,7 +37,7 @@ model = keras.Sequential([
 model.compile(loss='mean_squared_error', optimizer='adam')
 
 # Trainiert das Model mit den Eingangs- und den entsprechenden Ausgangswerten fuer 100 Epochen
-model.fit(x=eingangswerte, y=ausgangswerte, epochs=512, batch_size=2048)
+model.fit(x=eingangswerte, y=ausgangswerte, epochs=512, batch_size=1024)
 
 # Testet die Eingangsdaten und schreibt die Ergebnisse in die Konsole
 predictions = model.predict(eingangswerte)
